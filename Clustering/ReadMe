@@ -1,0 +1,11 @@
+Popa Maria-Catalina 342C1
+
+Tema 3 - Document Clustering
+
+	Se citescte pe rand fiecare document din directorul dataset si se extrag verbele, substantivele si 
+adjectivele. Se creeeaza o lista ce contine toate cuvintele alese, lematizate prin WordNetLemmatizer.
+Pentru a calcula TF-IDF se calculeaza DF si IDF pentru fiecare document si cuvant.
+	Pentru a calcula clusterizarea de creeaza o matrice N * N ce contine distanta eucludiana intre fisiere.
+La fiecare pas se extrage valoarea minima din matrice si se unesc cele doua documente in accelasi cluster.
+Algoritmul se repeta pana cand toate fisierele sunt clusterizate.
+	Se calculeaza puritatea conform formulei din enunt.

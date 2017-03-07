@@ -1,0 +1,19 @@
+Popa Maria-Catalina 342C1
+
+	Tema 1 - Decoder Morse
+
+	Rezolvarea temei se bazeaza pe generarea unui arbore de forma:
+tree = {'ch': None, 'pos': 0, 'children': {}} unde :
+	- ch: reprezinta caracterul decodificat
+	- pos: pozitia urmatoarea din sirul dat ca input
+	- children: lista de noduri copil
+
+	Arborele se genereaza recursiv iar la fiecare apelare a functie se
+calculeza lista de posibile caractere care pot fi generate din pozitia data.
+Se parcurge arborele deja existent pentru a se extrage parintele caracterului
+curent si pentru a se verifica daca pozitia a mai fost generata. In caz afirmativ
+se i-a doar referinta referinta catre nodul din arbore si se trece la urmatorea
+verificare.
+	Pentru a se genera solutiile se parcuge dictionarul si se fac verificari.
+Daca s-a ajuns la o frunza si cuvantul curent nu mai are caractere de verificat
+solutia se adauga in lista finala.
